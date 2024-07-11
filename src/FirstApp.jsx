@@ -8,7 +8,7 @@ const newMessage = {
 const getResult = (a, b) => a + b
 
 
-export const FirsApp = ({
+export const FirstApp = ({
   title, 
   subTitle, 
 }) => {
@@ -21,8 +21,7 @@ export const FirsApp = ({
 
   return (
     <>
-      <h1>{ name }</h1>
-      <h2>{ title }</h2>
+      <h1>{ title }</h1>
       <h3>{ subTitle }</h3>
       {/* <code>{ JSON.stringify( newMessage ) }</code> */}
 
@@ -32,13 +31,13 @@ export const FirsApp = ({
   )
 } 
 
-FirsApp.propTypes = {
+FirstApp.propTypes = {
   title: PropTypes.string.isRequired,
   subTitle: PropTypes.string,
 }
 
-FirsApp.defaultProps = {
-  title: 'NO HAY TITLE',
+FirstApp.defaultProps = {
+  title: 'Enrique Sabariego',
   subTitle: 'No hay subtitulo',
   name: 'No name',
 }
