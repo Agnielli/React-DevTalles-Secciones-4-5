@@ -8,10 +8,7 @@ const newMessage = {
 const getResult = (a, b) => a + b
 
 
-export const FirstApp = ({
-  title, 
-  subTitle, 
-}) => {
+export const FirstApp = ({title, subTitle,}) => {
   
   const { message, name } = newMessage
 
@@ -21,7 +18,8 @@ export const FirstApp = ({
 
   return (
     <>
-      <h1>{ title }</h1>
+      <h1 data-testid='test-title'>{ title }</h1>
+      <h3>{ subTitle }</h3>
       <h3>{ subTitle }</h3>
       {/* <code>{ JSON.stringify( newMessage ) }</code> */}
 
